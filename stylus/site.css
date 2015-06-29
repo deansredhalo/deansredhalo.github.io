@@ -677,6 +677,9 @@ footer[role="contentinfo"] .footer-item ul {
 footer[role="contentinfo"] .footer-item ul li {
   list-style-type: none;
 }
+footer[role="contentinfo"] .footer-item ul li label {
+  cursor: pointer;
+}
 footer[role="contentinfo"] .footer-item ul li a {
   color: #f2efea;
 }
