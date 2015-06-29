@@ -550,7 +550,7 @@ blockquote {
 }
 p {
   font-size: 1vw;
-  line-height: 1.1em;
+  line-height: 1.4em;
 }
 ::-moz-selection {
   background: #f80;
@@ -971,9 +971,9 @@ body.error h1:last-child {
   height: 25vw;
   position: relative;
   top: calc(50% - 2vh);
-  -webkit-transform: translateY(calc(-50% - 2vh));
-  -ms-transform: translateY(calc(-50% - 2vh));
-  transform: translateY(calc(-50% - 2vh));
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
   width: 100%;
 }
 @media only screen and (min-width: 700px) and (max-width: 1023px) {
