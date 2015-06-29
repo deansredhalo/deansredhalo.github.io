@@ -843,7 +843,7 @@ body.error h1:last-child {
 .hero .splash {
   display: inline-block;
   float: right;
-  height: 50vw;
+  height: 100vh;
   position: relative;
   width: 75%;
   *zoom: 1;
@@ -1120,14 +1120,23 @@ body.error h1:last-child {
   margin-right: 0%;
 }
 .content-block .work .work-clients {
-  background-image: url("../img/logos.gif");
+  display: inline-block;
+  background-image: url("../img/logos01.gif");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
   float: left;
-  height: 15vw;
+  height: 9vw;
   margin: 2vw 0;
   width: 100%;
+}
+.content-block .work .work-clients:last-of-type {
+  background-image: url("../img/logos02.gif");
+  height: 5vw;
+  margin-top: 0;
+}
+.content-block .work p {
+  display: inline-block;
 }
 .content-block .work h5 {
   margin: 0.25em 0;
