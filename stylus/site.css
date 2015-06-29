@@ -571,19 +571,29 @@ p {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 800px) {
-  p {
-    font-size: 11px;
-  }
-}
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
   p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  blockquote {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
   blockquote {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 .animated {
@@ -695,10 +705,10 @@ footer[role="contentinfo"] {
   text-align: center;
   width: 100%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   footer[role="contentinfo"] {
     background-image: none;
-    height: 16vh;
+    height: auto;
   }
 }
 footer[role="contentinfo"] .footer-item ul {
@@ -717,6 +727,11 @@ footer[role="contentinfo"] .footer-item ul li a {
 footer[role="contentinfo"] p {
   color: #f2efea;
   font-size: 0.75vw;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  footer[role="contentinfo"] p {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 800px) {
   footer[role="contentinfo"] p {
@@ -755,11 +770,12 @@ header[role="banner"] nav span {
 @media only screen and (max-width: 800px) {
   header[role="banner"] nav span {
     font-size: 11px;
+    width: 18%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
   header[role="banner"] nav span {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 header[role="banner"] nav span a {
@@ -885,10 +901,10 @@ body.error h1:last-child {
 }
 .hero {
   display: block;
-  height: 190vh;
+  height: auto;
   width: 100%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .hero {
     height: auto;
     padding: 0;
@@ -901,19 +917,20 @@ body.error h1:last-child {
   top: 0;
   width: 21%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .hero .masthead {
     display: none;
   }
 }
 .hero .masthead img {
-  height: 190vh;
+  height: auto;
   max-width: 300px;
 }
 .hero .splash {
   display: inline-block;
   float: right;
   height: 100vh;
+  max-height: 700px;
   position: relative;
   width: 75%;
   *zoom: 1;
@@ -925,6 +942,18 @@ body.error h1:last-child {
 }
 .hero .splash:after {
   clear: both;
+}
+@media only screen and (max-width: 800px) {
+  .hero .splash {
+    height: 85vh;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  .hero .splash {
+    height: 25vh;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 400px) {
   .hero .splash {
@@ -947,6 +976,11 @@ body.error h1:last-child {
   transform: translateY(calc(-50% - 2vh));
   width: 100%;
 }
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  .hero .splash .logo {
+    top: 50%;
+  }
+}
 .content-block {
   display: inline-block;
   height: auto;
@@ -968,7 +1002,7 @@ body.error h1:last-child {
   margin-bottom: 2vw;
   width: 75%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block.quick-content {
     width: 100%;
   }
@@ -980,7 +1014,7 @@ body.error h1:last-child {
 .content-block.quick-content section blockquote {
   text-align: right;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block.quick-content section h3,
   .content-block.quick-content section blockquote {
     text-align: left;
@@ -991,7 +1025,7 @@ body.error h1:last-child {
   text-align: justify;
   width: 90%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block.quick-content section p {
     width: 100%;
   }
@@ -1000,7 +1034,7 @@ body.error h1:last-child {
   display: block;
   float: right;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block.quick-content section blockquote {
     padding-left: 0;
   }
@@ -1032,7 +1066,7 @@ body.error h1:last-child {
 .content-block.quick-content section .quick-content-blurbs .blurb:last-child {
   margin-right: 0%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block.quick-content section .quick-content-blurbs .blurb {
     text-align: left;
   }
@@ -1052,16 +1086,21 @@ body.error h1:last-child {
   font-size: 1vw;
   width: 80%;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
   .content-block.quick-content section .quick-content-blurbs .blurb span {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block.quick-content section .quick-content-blurbs .blurb span {
     border: none;
     font-size: 11px;
     width: 100%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  .content-block.quick-content section .quick-content-blurbs .blurb span {
+    font-size: 16px;
   }
 }
 .content-block section {
@@ -1071,7 +1110,7 @@ body.error h1:last-child {
   font-size: 2.75vw;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block section h3 {
     font-size: 20px;
   }
@@ -1106,7 +1145,7 @@ body.error h1:last-child {
 .content-block .skills:nth-child(4n+1) {
   clear: both;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block .skills {
     display: block;
     clear: both;
@@ -1172,9 +1211,19 @@ body.error h1:last-child {
   position: relative;
   width: 100%;
 }
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .content-block .skills .see-details {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .content-block .skills .see-details {
     font-size: 12px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  .content-block .skills .see-details {
+    font-size: 18px;
   }
 }
 .content-block .skills .see-details > span {
@@ -1199,9 +1248,19 @@ body.error h1:last-child {
   transition: opacity 0.3s ease-in-out;
   vertical-align: top;
 }
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .content-block .skills .see-details .close {
+    font-size: 40px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .content-block .skills .see-details .close {
     font-size: 32px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  .content-block .skills .see-details .close {
+    font-size: 40px;
   }
 }
 .content-block .skills .see-details .close.visible {
@@ -1227,10 +1286,16 @@ body.error h1:last-child {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block .skills .see-details .details.open {
     max-height: 38vw;
     min-height: 28vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .content-block .skills .see-details .details.open {
+    max-height: 40vw;
+    min-height: 32vw;
   }
 }
 .content-block .skills .see-details .details ul {
@@ -1240,6 +1305,11 @@ body.error h1:last-child {
 .content-block .skills .see-details .details ul li {
   list-style-type: none;
   padding: 0.25rem 0;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .content-block .skills .see-details .details ul li {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 800px) {
   .content-block .skills .see-details .details ul li {
@@ -1275,7 +1345,7 @@ body.error h1:last-child {
 .content-block .work:last-child {
   margin-right: 0%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block .work {
     display: block;
     clear: both;
@@ -1305,7 +1375,7 @@ body.error h1:last-child {
   margin: 2vw 0;
   width: 100%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block .work .work-clients {
     display: none;
   }
@@ -1323,7 +1393,7 @@ body.error h1:last-child {
   text-align: right;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block .work h5 {
     text-align: left;
   }
@@ -1372,7 +1442,7 @@ body.error h1:last-child {
   transition: all 0.3s ease-in-out;
   width: 60%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block .work .work-experience .work-experience-item,
   .content-block .work .open-source .work-experience-item,
   .content-block .work .work-experience .open-source-item,
@@ -1408,15 +1478,15 @@ body.error h1:last-child {
   font-size: 0.85vw;
   margin-top: 1%;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
   .content-block .work .work-experience .work-experience-item span,
   .content-block .work .open-source .work-experience-item span,
   .content-block .work .work-experience .open-source-item span,
   .content-block .work .open-source .open-source-item span {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
   .content-block .work .work-experience .work-experience-item span,
   .content-block .work .open-source .work-experience-item span,
   .content-block .work .work-experience .open-source-item span,
@@ -1424,7 +1494,15 @@ body.error h1:last-child {
     font-size: 11px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  .content-block .work .work-experience .work-experience-item span,
+  .content-block .work .open-source .work-experience-item span,
+  .content-block .work .work-experience .open-source-item span,
+  .content-block .work .open-source .open-source-item span {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
   .content-block .work .work-experience .open-source-item,
   .content-block .work .open-source .open-source-item {
     text-align: left;
@@ -1466,13 +1544,14 @@ body.error h1:last-child {
   text-align: center;
   width: 100%;
 }
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .scroll-helper {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .scroll-helper {
     font-size: 10px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .scroll-helper {
     display: none;
   }
 }
