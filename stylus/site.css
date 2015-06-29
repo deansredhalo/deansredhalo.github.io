@@ -561,6 +561,21 @@ p {
 ::moz-selection {
   background: #f80;
 }
+@media only screen and (max-width: 800px) {
+  label {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  blockquote {
+    font-size: 12px;
+  }
+}
 .animated {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -670,6 +685,12 @@ footer[role="contentinfo"] {
   text-align: center;
   width: 100%;
 }
+@media only screen and (max-width: 400px) {
+  footer[role="contentinfo"] {
+    background-image: none;
+    height: 16vh;
+  }
+}
 footer[role="contentinfo"] .footer-item ul {
   color: #f2efea;
   font-size: 0.85vw;
@@ -686,6 +707,16 @@ footer[role="contentinfo"] .footer-item ul li a {
 footer[role="contentinfo"] p {
   color: #f2efea;
   font-size: 0.75vw;
+}
+@media only screen and (max-width: 800px) {
+  footer[role="contentinfo"] p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer[role="contentinfo"] p {
+    font-size: 8px;
+  }
 }
 header[role="banner"] {
   display: inline-block;
@@ -705,6 +736,16 @@ header[role="banner"] nav span {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   width: 20%;
+}
+@media only screen and (max-width: 800px) {
+  header[role="banner"] nav span {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header[role="banner"] nav span {
+    font-size: 11px;
+  }
 }
 header[role="banner"] nav span a {
   color: #5e5e5e;
@@ -832,12 +873,23 @@ body.error h1:last-child {
   height: 190vh;
   width: 100%;
 }
+@media only screen and (max-width: 400px) {
+  .hero {
+    height: auto;
+    padding: 0;
+  }
+}
 .hero .masthead {
   float: left;
   height: 100%;
   position: relative;
   top: 0;
   width: 21%;
+}
+@media only screen and (max-width: 400px) {
+  .hero .masthead {
+    display: none;
+  }
 }
 .hero .masthead img {
   height: 190vh;
@@ -858,6 +910,12 @@ body.error h1:last-child {
 }
 .hero .splash:after {
   clear: both;
+}
+@media only screen and (max-width: 400px) {
+  .hero .splash {
+    height: 25vh;
+    width: 100%;
+  }
 }
 .hero .splash .logo {
   background-image: url("../img/logo2.svg");
@@ -891,25 +949,46 @@ body.error h1:last-child {
 }
 .content-block.quick-content {
   float: right;
-  height: 16vw;
+  height: auto;
   margin-bottom: 2vw;
   width: 75%;
 }
+@media only screen and (max-width: 400px) {
+  .content-block.quick-content {
+    width: 100%;
+  }
+}
 .content-block.quick-content:last-of-type {
-  height: 20vw;
+  height: auto;
 }
 .content-block.quick-content section h3,
 .content-block.quick-content section blockquote {
   text-align: right;
+}
+@media only screen and (max-width: 400px) {
+  .content-block.quick-content section h3,
+  .content-block.quick-content section blockquote {
+    text-align: left;
+  }
 }
 .content-block.quick-content section p {
   float: right;
   text-align: justify;
   width: 90%;
 }
+@media only screen and (max-width: 400px) {
+  .content-block.quick-content section p {
+    width: 100%;
+  }
+}
 .content-block.quick-content section blockquote {
   display: block;
   float: right;
+}
+@media only screen and (max-width: 400px) {
+  .content-block.quick-content section blockquote {
+    padding-left: 0;
+  }
 }
 .content-block.quick-content section .quick-content-blurbs {
   display: block;
@@ -938,6 +1017,11 @@ body.error h1:last-child {
 .content-block.quick-content section .quick-content-blurbs .blurb:last-child {
   margin-right: 0%;
 }
+@media only screen and (max-width: 400px) {
+  .content-block.quick-content section .quick-content-blurbs .blurb {
+    text-align: left;
+  }
+}
 .content-block.quick-content section .quick-content-blurbs .blurb:nth-of-type(2) {
   margin-right: 0%;
   float: right;
@@ -953,12 +1037,29 @@ body.error h1:last-child {
   font-size: 1vw;
   width: 80%;
 }
+@media only screen and (max-width: 800px) {
+  .content-block.quick-content section .quick-content-blurbs .blurb span {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .content-block.quick-content section .quick-content-blurbs .blurb span {
+    border: none;
+    font-size: 11px;
+    width: 100%;
+  }
+}
 .content-block section {
   padding-top: 2%;
 }
 .content-block section h3 {
   font-size: 2.75vw;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 400px) {
+  .content-block section h3 {
+    font-size: 20px;
+  }
 }
 .content-block .skills {
   *zoom: 1;
@@ -989,6 +1090,22 @@ body.error h1:last-child {
 }
 .content-block .skills:nth-child(4n+1) {
   clear: both;
+}
+@media only screen and (max-width: 400px) {
+  .content-block .skills {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-block .skills:first-child {
+    margin-left: auto;
+  }
+  .content-block .skills:last-child {
+    margin-right: auto;
+  }
 }
 .content-block .skills:last-child {
   float: right;
@@ -1040,6 +1157,11 @@ body.error h1:last-child {
   position: relative;
   width: 100%;
 }
+@media only screen and (max-width: 800px) {
+  .content-block .skills .see-details {
+    font-size: 12px;
+  }
+}
 .content-block .skills .see-details > span {
   cursor: pointer;
   opacity: 1;
@@ -1062,6 +1184,11 @@ body.error h1:last-child {
   transition: opacity 0.3s ease-in-out;
   vertical-align: top;
 }
+@media only screen and (max-width: 800px) {
+  .content-block .skills .see-details .close {
+    font-size: 32px;
+  }
+}
 .content-block .skills .see-details .close.visible {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1080,10 +1207,16 @@ body.error h1:last-child {
   width: 100%;
 }
 .content-block .skills .see-details .details.open {
-  max-height: 220px;
-  min-height: 190px;
+  max-height: 28vw;
+  min-height: 18vw;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 400px) {
+  .content-block .skills .see-details .details.open {
+    max-height: 38vw;
+    min-height: 28vw;
+  }
 }
 .content-block .skills .see-details .details ul {
   margin: 0;
@@ -1092,6 +1225,11 @@ body.error h1:last-child {
 .content-block .skills .see-details .details ul li {
   list-style-type: none;
   padding: 0.25rem 0;
+}
+@media only screen and (max-width: 800px) {
+  .content-block .skills .see-details .details ul li {
+    padding: 0;
+  }
 }
 .content-block .skills .see-details .details p {
   margin: 1rem 0 0 0;
@@ -1122,6 +1260,25 @@ body.error h1:last-child {
 .content-block .work:last-child {
   margin-right: 0%;
 }
+@media only screen and (max-width: 400px) {
+  .content-block .work {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-block .work:first-child {
+    margin-left: auto;
+  }
+  .content-block .work:last-child {
+    margin-right: auto;
+  }
+  .content-block .work:last-of-type {
+    margin-top: 5vw;
+  }
+}
 .content-block .work .work-clients {
   display: inline-block;
   background-image: url("../img/logos01.gif");
@@ -1133,6 +1290,11 @@ body.error h1:last-child {
   margin: 2vw 0;
   width: 100%;
 }
+@media only screen and (max-width: 400px) {
+  .content-block .work .work-clients {
+    display: none;
+  }
+}
 .content-block .work .work-clients:last-of-type {
   background-image: url("../img/logos02.gif");
   height: 5vw;
@@ -1142,9 +1304,14 @@ body.error h1:last-child {
   display: inline-block;
 }
 .content-block .work h5 {
-  margin: 0.25em 0;
+  margin: 0 0 0.25em 0;
   text-align: right;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 400px) {
+  .content-block .work h5 {
+    text-align: left;
+  }
 }
 .content-block .work .work-experience,
 .content-block .work .open-source {
@@ -1190,6 +1357,14 @@ body.error h1:last-child {
   transition: all 0.3s ease-in-out;
   width: 60%;
 }
+@media only screen and (max-width: 400px) {
+  .content-block .work .work-experience .work-experience-item,
+  .content-block .work .open-source .work-experience-item,
+  .content-block .work .work-experience .open-source-item,
+  .content-block .work .open-source .open-source-item {
+    width: 100%;
+  }
+}
 .content-block .work .work-experience .work-experience-item:hover,
 .content-block .work .open-source .work-experience-item:hover,
 .content-block .work .work-experience .open-source-item:hover,
@@ -1217,6 +1392,28 @@ body.error h1:last-child {
   display: block;
   font-size: 0.85vw;
   margin-top: 1%;
+}
+@media only screen and (max-width: 800px) {
+  .content-block .work .work-experience .work-experience-item span,
+  .content-block .work .open-source .work-experience-item span,
+  .content-block .work .work-experience .open-source-item span,
+  .content-block .work .open-source .open-source-item span {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .content-block .work .work-experience .work-experience-item span,
+  .content-block .work .open-source .work-experience-item span,
+  .content-block .work .work-experience .open-source-item span,
+  .content-block .work .open-source .open-source-item span {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .content-block .work .work-experience .open-source-item,
+  .content-block .work .open-source .open-source-item {
+    text-align: left;
+  }
 }
 .content-block .contact-options {
   margin-top: 2%;
@@ -1253,6 +1450,16 @@ body.error h1:last-child {
   position: fixed;
   text-align: center;
   width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .scroll-helper {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .scroll-helper {
+    display: none;
+  }
 }
 .scroll-helper .scroll-helper-arrow {
   position: absolute;
