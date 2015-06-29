@@ -11692,7 +11692,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
   window.Headroom = Headroom;
 
 }(window, document));(function() {
-  var animateOffset, animateSkills, didScroll, getOffset, helperScrollEvent, navigateTo, registerNavigation, registerScroll, registerScrollHelper, registerScrollInterval, registerSkillsDetailsClicks, runOnce, skillsScrollEvent, skillsScrolled, skillsValues;
+  var animateOffset, animateSkills, didScroll, getOffset, helperScrollEvent, navigateTo, registerNavigation, registerOrientationChange, registerScroll, registerScrollHelper, registerScrollInterval, registerSkillsDetailsClicks, runOnce, skillsScrollEvent, skillsScrolled, skillsValues;
 
   didScroll = false;
 
@@ -11803,6 +11803,12 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
     });
   };
 
+  registerOrientationChange = function() {
+    return $(window).on('orientationchange', function() {
+      return location.reload();
+    });
+  };
+
   registerScroll();
 
   registerScrollInterval();
@@ -11812,5 +11818,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
   registerScrollHelper();
 
   registerSkillsDetailsClicks();
+
+  registerOrientationChange();
 
 }).call(this);
