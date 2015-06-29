@@ -566,9 +566,19 @@ p {
     font-size: 12px;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  label {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 800px) {
   p {
     font-size: 11px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  p {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -736,6 +746,11 @@ header[role="banner"] nav span {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   width: 20%;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  header[role="banner"] nav span {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 800px) {
   header[role="banner"] nav span {
